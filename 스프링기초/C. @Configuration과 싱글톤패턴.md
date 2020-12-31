@@ -54,7 +54,8 @@ public class AppConfig {
         if (memoryMemberRepository가 이미 스프링 컨테이너에 등록되어 있으면?) { 
             return 스프링 컨테이너에서 찾아서 반환;
         } else { //스프링 컨테이너에 없으면
-            기존 로직을 호출해서 MemoryMemberRepository를 생성하고 스프링 컨테이너에 등록 return 반환
+            기존 로직을 호출해서 MemoryMemberRepository를 생성하고 스프링 컨테이너에 등록 
+            return 반환
         } 
     }
 ```
