@@ -50,3 +50,7 @@ public @interface MyExcludeComponent {
           @Filter(type = FilterType.ASSIGNABLE_TYPE, classes = BeanA.class) }
 )
 ```
+
+## Filter 권장 사용법
+1. `@Component` 에노테이션으로 충분하기에 `includeFilters`를 거의 사용할 일이 없으며 `excludeFilters`는 아주 가끔 사용된다.
+2. 특히 최근 스프링 부트는 컴포넌트 스캔을 기본으로 제공하기에 옵션을 지정하는 것보다는 스프링의 기본 설정에 최대한 맞추어 사용하는 것을 권장한다. 
