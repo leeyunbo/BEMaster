@@ -6,7 +6,7 @@
 @Documented
 public @interface MyIncludeComponent { }
 ```
-위의 에노테이션을 설정한 스프링 빈은 컴포넌트 스캔 대상에서 포함된다.
+위의 에노테이션을 설정한 스프링 빈은 컴포넌트 스캔 대상에서 **포함**된다.
 
 ### MyExcludeComponent 에노테이션 만들기
 ```java
@@ -16,7 +16,7 @@ public @interface MyIncludeComponent { }
 public @interface MyExcludeComponent {
 }
 ```
-위의 에노테이션을 설정한 빈은 컴포넌트 스캔 대상에서 제외된다.
+위의 에노테이션을 설정한 빈은 컴포넌트 스캔 대상에서 **제외**된다.
 
 ### excludeFilters, includeFilters 지정하기 
 ```java
@@ -31,7 +31,7 @@ public @interface MyExcludeComponent {
 ```
 1. ComponentScan에서 `MyIncludeComponent` 에노테이션이 추가된 빈이 스프링 빈에 등록된다.
 2. ComponentScan에서 `MyExcludeComponent` 에노테이션이 추가된 빈은 스프링 빈에서 제외된다. 
-3. `FilterType.ANNOTATION`은 Default 설정이기에 생략해도 동일하게 동작한다. 
+3. **`FilterType.ANNOTATION`은 Default 설정이기에 생략해도 동일하게 동작한다.**
 
 ### FilterType 옵션 
 1. ANNOTATION : 기본값, 에노테이션을 인식하여 동작한다. ex) org.example.SomeAnnotation
