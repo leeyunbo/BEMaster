@@ -32,6 +32,7 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
       this.memberRepository = memberRepository; 
+      // 컴파일 오류 발생!! discountPolicy 초기화가 누락됨 
     }
 ``` 
 1. 생성자 주입을 사용하면 `final` 키워드를 사용할 수 있다. (초기화가 필수적이므로 생성자 주입에서는 사용 불가) 
