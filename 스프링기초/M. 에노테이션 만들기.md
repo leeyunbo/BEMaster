@@ -1,5 +1,5 @@
 ## 에노테이션 만들기
-> `@Qualifier("mainDiscountPolicy")`와 같이 문자를 적게되면 컴파일시 타입 체크가 이루어지지 않는다. 
+> `@Qualifier("mainDiscountPolicy")`와 같이 문자를 적게되면 컴파일시 타입 체크가 이루어지지 않는다.  <br/>
 > 어떻게 해결할 수 있을까? 
 
 ### 에노테이션 생성 
