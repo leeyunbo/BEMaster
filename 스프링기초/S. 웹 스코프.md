@@ -15,7 +15,7 @@
 ## request 스코프 
 ### request 스코프의 동작 방식 
 ![스크린샷 2021-01-23 오후 6 57 08](https://user-images.githubusercontent.com/44944031/105575159-d12bd180-5dac-11eb-85fc-78f56784710d.png)
-1. gradle에 'org.springframework.boot:spring-boot-starter-web' 웹 라이브러리를 추가해야한다. (스프링 부트는 톰켓 서버를 할용하여 웹서버와 스프링을 함께 실행) 
+1. gradle에 `org.springframework.boot:spring-boot-starter-web` 웹 라이브러리를 추가해야한다. (스프링 부트는 톰켓 서버를 할용하여 웹서버와 스프링을 함께 실행) 
 2. 동시에 여러 요청이 들어오면 각기 다른 인스턴스를 생성하고 관리한다. 
 3. 만약 어떤 요청에 의하여 서비스가 호출되면 그 서비스는 그 요청과 동일한 인스턴스를 가라킨다. 
 
