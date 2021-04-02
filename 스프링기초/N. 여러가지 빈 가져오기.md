@@ -25,7 +25,7 @@
 ```
 1. `DiscountService`는 `Map`으로 모든 `DiscountPolicy` 구현체를 주입받는다. 
 2. `discount()` 메서드는 `discountCode`를 키로 이용하여 해당되는 할인 정책 빈을 가져와 실행한다. 
-3. `"rateDiscountPolicy"` **->** `rateDiscountPolicy.class`,  `"fixDiscountPolicy"` **->** `fixDiscountPolicy.class` 
+3. `"rateDiscountPolicy"` **->** `RateDiscountPolicy.class`,  `"fixDiscountPolicy"` **->** `FixDiscountPolicy.class` 
 
 <br/>
 
