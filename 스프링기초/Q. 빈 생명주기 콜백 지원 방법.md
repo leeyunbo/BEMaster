@@ -34,7 +34,7 @@ public class NetworkClient {
     }
 
     // 빈이 파괴될 때 호출되는 메서드
-    public void destroy(){
+    public void close(){
         disconnect();
     }
 }
